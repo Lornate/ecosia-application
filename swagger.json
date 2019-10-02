@@ -1,0 +1,47 @@
+{
+  "schemes": [
+    "http"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "This documentation describes example APIs found under https://github.com/sunilnk17/Ecosia",
+    "title": "Favorite tree",
+    "contact": {
+      "name": "Sunil NK",
+      "email": "sunilnk95@gmail.com"
+    },
+    "version": "1.0.0"
+  },
+  "host": "127.0.0.1",
+  "paths": {
+    "/": {
+      "get": {
+        "description": "Get Favorite tree",
+        "schemes": [
+          "http"
+        ],
+        "summary": "Get Favorite tree from the URL",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Favorite tree name",
+            "name": "favoriteTree",
+            "in": "query",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The request is successful."
+          },
+          "400": {
+            "description": "The request doesn't meet the requirements"
+          },
+          "404": {
+            "description": "The request is invalid"
+          }
+        }
+      }
+    }
+  }
+}
