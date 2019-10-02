@@ -33,10 +33,10 @@ Run project
 ```
 
 
-###Developer Notes
+### Developer Notes
 
 
-###Swagger
+### Swagger
 
 API documentation
 
@@ -90,14 +90,14 @@ API documentation
 }
 ```
 
-####GET
+#### GET
 ```$xslt
 http://127.0.0.1:8000/?favoriteTree=apple
 ```
 
 The Application returns 200 for the successful request. 400 for Bad request. 404 invalid request.
 
-######TestCase 1: 
+###### TestCase 1: 
 
 ```$xslt
 http://localhost:8000/?favoriteTree=apple
@@ -105,15 +105,15 @@ http://localhost:8000/?favoriteTree=apple
 
 Result : This is a valid request and returns 200 with HTML encoding text in the browser.
 
-######TestCase 2: 
+###### TestCase 2: 
 
 ```$xslt
 http://localhost:8000/?
 ```
 
-Result : This is a Bad request and returns 400 with corresponding response.
+Result: This is a Bad request and returns 400 with corresponding response.
 
-######TestCase 3: 
+###### TestCase 3: 
 
 ```$xslt
 http://localhost:8000/?favoriteTee=apple
@@ -121,20 +121,21 @@ http://localhost:8000/?favoriteTee=apple
 
 Result : This is an invalid request returns 400 with corresponding response.
 
-######TestCase 4: 
+###### TestCase 4: 
 
 ```$xslt
 http://localhost:8000?fa=tree
 ```
 
-Result : This is an invalid request returns 404.
+Result: This is an invalid request returns 404.
 
 
-###To view the test cases
+### To view the test cases
 
 ```$xslt
 ecosia-application/ecosia_test.go
 ```
+
 
 
 
